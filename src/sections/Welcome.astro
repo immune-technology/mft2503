@@ -1,0 +1,33 @@
+---
+import data from "../assets/data.json";
+import Logo from "../assets/icons/Logo.astro";
+import Canvas from "../components/Canvas.astro";
+---
+
+<section
+  class="overflow-hidden min-h-dvh px-5 py-10 flex flex-col items-center gap-4 text-center after:absolute after:top-0 after:left-0 after:w-full after:h-full after:-z-40"
+>
+  <Logo />
+  <p class="mb-auto uppercase tracking-ch">Innovación, Talento y Empresas</p>
+  <p>
+    Nos vemos en la <strong>{data.edition} edición</strong> de encuentro de talento
+    tecnológico de Madridfortech,
+    <br />
+    online y en nuestro campus en <a
+      href={data.legal.address.url}
+      target="_blank"
+      class="underline">{data.legal.address.text}</a
+    >
+  </p>
+  <Canvas />
+</section>
+
+<style>
+  section::after {
+    background: radial-gradient(
+      circle,
+      theme("colors.neutral.50") 0%,
+      theme("colors.red.50") 100%
+    );
+  }
+</style>

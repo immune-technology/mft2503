@@ -1,0 +1,216 @@
+---
+import Event from "../components/Event.astro";
+---
+
+<section id="agenda" class="container py-20">
+  <h2 class="container text-6xl md:text-9xl font-thin mb-10">Agenda</h2>
+  <div role="region" tabindex="0" class="overflow-auto w-full">
+    <table class="h-full w-full border-spacing-px text-left border-collapse">
+      <caption class="text-left mt-2 opacity-50"
+        >* La agenda puede sufrir cambios.</caption
+      >
+      <thead>
+        <tr>
+          <th>HORARIO</th>
+          <th align="center" style="width: 50%;">ESPACIO 1</th>
+          <th align="center" style="width: 50%;">ESPACIO 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:00 - 9:30h.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9:30 - 10:00h.</td>
+          <td colspan="2">
+            <Event>
+              <h3>Bienvenida</h3>
+              <p><small>9:30 - 10:00 (30mins)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>10:00 - 10:30h.</td>
+          <td rowspan="2">
+            <Event>
+              <h3>IA: Dos años después, Tecnocenizos o Tecnooptimistas?</h3>
+              <p>
+                Moderador: Javier Recuenco | Ponentes: Agustín Cuenca, Irene
+                Serrano y José Luis Calvo Salanova
+              </p>
+              <p><small>10:00 - 11:00 (1h)</small></p>
+            </Event>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:30 - 11:00h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:00 - 11:30h.</td>
+          <td>
+            <Event>
+              <h3>Ciberseguridad en las Energías Renovables</h3>
+              <p>Iberdrola | Julio Arbizu</p>
+              <p><small>11:00 - 11:30 (30mins)</small></p>
+            </Event>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:30 - 12:00h.</td>
+          <td></td>
+          <td rowspan="4">
+            <Event>
+              <h3>Expo IMMUNE</h3>
+              <ul class="list-disc ps-6">
+                <li>
+                  BeSecure: Marcos López Garau, Adrián Tomás Sánchez y Nicolás
+                  Pertierra Sandoval
+                </li>
+                <li>Tegere: Rocío Medina</li>
+                <li>GetCoc: Alberto Romero, CTO & Co-Founder</li>
+                <li>We are Innato: Raúl Balaguer</li>
+                <li>Ciber Security Consulting: Álvaro Morales</li>
+                <li>Revolve: Fernando Ramírez</li>
+                <li>Interpre: Daniel Palomino</li>
+                <li>Ciber&GO: Carmen Alicia Torre</li>
+                <li>Ciber Sift: Rubens Sánchez</li>
+              </ul>
+              <p><small>11:30 - 13:30 (2hs)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>12:00 - 12:30h.</td>
+          <td>
+            <Event>
+              <h3>IA4DATA</h3>
+              <p>CaixaBank Tech | Alberto Barbado González</p>
+              <p><small>12:00 - 12:30 (30mins)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>12:30 - 13:00h.</td>
+          <td>
+            <Event>
+              <h3>
+                Del concepto a la realidad: mi viaje en startups de IA para la
+                salud mental
+              </h3>
+              <p>Raúl Alelú</p>
+              <p><small>12:30 - 13:00 (30mins)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>13:00 - 13:30h.</td>
+          <td rowspan="2">
+            <Event>
+              <h3>Emprendimiento en ciberseguridad: una oportunidad</h3>
+              <p>
+                Moderador: Miguel Rego | Ponentes: Javier Soria, Sergio Borgogno
+                y Alejandro Corletti
+              </p>
+              <p><small>13:00 - 14:00 (1h)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>13:30 - 14:00h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14:00 - 14:30h.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14:30 - 15:00h.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>15:00 - 15:30h.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>15:30 - 16:00h.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16:00 - 16:30h.</td>
+          <td></td>
+          <td rowspan="4">
+            <Event>
+              <h3>Experimentado con IA generativa, Partyrock</h3>
+              <p>Taller AWS | Guillermo Ruiz</p>
+              <p><small>16:00 - 18:00 (2hs)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>16:30 - 17:00h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>17:00 - 17:30h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>17:30 - 18:00h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18:00 - 18:30h.</td>
+          <td></td>
+          <td rowspan="2">
+            <Event>
+              <h3>Estrategias de delivery con Shift Left Testing</h3>
+              <p>Taller Cloud | Ramón Abad</p>
+              <p><small>18:00 - 19:00 (1h)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>18:30 - 19:00h.</td>
+          <td rowspan="2">
+            <Event>
+              <h3>
+                Cómo renovar el reclutamiento en UX: 40 Ideas para un cambio
+                real
+              </h3>
+              <p>Taller UX | Raúl Marín y Victor González</p>
+              <p><small>18:30 - 19:30 (1h)</small></p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>19:00 - 19:30h.</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  caption {
+    caption-side: bottom;
+  }
+
+  th,
+  td {
+    @apply border p-2 border-solid border-red-950/10;
+  }
+
+  tr > td:first-of-type {
+    @apply md:whitespace-nowrap;
+  }
+</style>

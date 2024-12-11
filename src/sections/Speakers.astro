@@ -1,0 +1,31 @@
+---
+import data from "../assets/data.json";
+---
+
+<section id="ponentes" class="overflow-hidden py-20">
+  <h2 class="container text-6xl md:text-9xl font-thin mb-10">
+    Ponentes confirmados
+  </h2>
+  <div class="flex gap-5">
+    {
+      data.people.map((item) => (
+        <div class="w-60 flex-shrink-0">
+          <img
+            src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo}.webp`}
+            alt={item.name}
+            width="240"
+            height="240"
+            loading="eager"
+            class="saturate-0"
+          />
+          <h3>{item.name}</h3>
+          <p>
+            <small>{item.position}</small>
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style></style>
