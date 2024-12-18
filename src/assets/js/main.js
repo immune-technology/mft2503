@@ -1,11 +1,16 @@
 import Spheres2Background from "https://cdn.jsdelivr.net/npm/threejs-components@0.0.8/build/backgrounds/spheres2.cdn.min.js";
 import Lenis from "lenis";
 
-const randomNumber = Math.floor(Math.random() * 50) + 1;
+const randomNumber = Math.floor(Math.random() * 50) + 10;
 
 document.addEventListener("DOMContentLoaded", () => {
   // 3D Background
   const canvas = document.getElementById("webgl-canvas");
+
+  setTimeout(() => {
+    canvas.classList.add("fadeIn");
+  }, 100);
+
   const bg = Spheres2Background(canvas, {
     count: randomNumber,
     colors: [0xff0000, 0x330000, 0xffffff],
