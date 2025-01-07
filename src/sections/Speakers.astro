@@ -1,11 +1,9 @@
 ---
 import data from "../assets/data.json";
+import Section from "./Section.astro";
 ---
 
-<section id="ponentes" class="overflow-hidden py-20">
-  <h2 class="container text-6xl md:text-9xl font-thin mb-10">
-    Ponentes confirmados
-  </h2>
+<Section id="ponentes" title="Ponentes confirmados">
   <div class="flex gap-5">
     {
       data.people.map((item) => (
@@ -26,4 +24,4 @@ import data from "../assets/data.json";
       ))
     }
   </div>
-</section>
+</Section>
