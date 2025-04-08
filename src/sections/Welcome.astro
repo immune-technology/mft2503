@@ -5,23 +5,21 @@ import Background from "../components/Background.astro";
 import Countdown from "../components/Countdown.astro";
 ---
 
-<section class="overflow-hidden min-h-dvh bg-background isolate">
-  <div
-    class="w-full h-dvh p-5 flex flex-col items-center justify-center text-neutral-50 text-center"
-  >
-    <Logo />
-    <h1 class="uppercase tracking-ch">Innovación, Talento y Empresas</h1>
-    <Countdown />
-    <p>
-      Nos vemos en la <strong>{data.edition} edición</strong> de encuentro de talento
-      tecnológico de Madridfortech,
-      <br />
-      online y en nuestro campus en <a
-        href={data.legal.address.url}
-        target="_blank"
-        class="underline">{data.legal.address.text}</a
-      >
-    </p>
-  </div>
+<section
+  class="overflow-hidden min-h-dvh isolate w-full h-dvh p-5 flex flex-col items-center justify-center text-neutral-50 text-center"
+>
+  <Logo />
+  <h1 class="uppercase tracking-ch">Innovación, Talento y Empresas</h1>
+  <Countdown />
+  <p>
+    Nos vemos en la <strong>{data.edition} edición</strong> de encuentro de talento
+    tecnológico de Madridfortech,
+    <br />
+    online y en nuestro campus en <a
+      href={data.legal.address.url}
+      target="_blank"
+      class="underline">{data.legal.address.text}</a
+    >
+  </p>
   <Background />
 </section>

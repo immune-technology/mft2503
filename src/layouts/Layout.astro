@@ -30,7 +30,7 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
     <meta name="theme-color" content="#050000" />
   </head>
   <body
-    class="overflow-y-scroll overflow-x-hidden bg-neutral-50 text-secondary font-sans leading-loose after:fixed after:top-0 after:left-0 after:w-full after:h-full after:-z-50"
+    class="overflow-x-hidden bg-background text-neutral-50 font-sans leading-loose"
   >
     <slot />
     <script src="../assets/js/main.js"></script>
@@ -43,16 +43,6 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
     ></script>
   </body>
 </html>
-
-<style>
-  body::after {
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      theme("colors.red.50") 100%
-    );
-  }
-</style>
 
 <style is:global>
   ::selection {
