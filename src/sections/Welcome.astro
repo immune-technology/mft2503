@@ -1,19 +1,26 @@
 ---
 import data from "../assets/data.json";
+import CalendarEvent from "../assets/icons/CalendarEvent.astro";
 import Logo from "../assets/icons/Logo.astro";
-import Background from "../components/Background.astro";
 import Countdown from "../components/Countdown.astro";
 ---
 
 <section
-  class="overflow-hidden min-h-dvh isolate w-full h-dvh p-5 flex flex-col items-center justify-center text-neutral-50 text-center"
+  class="w-full min-h-dvh p-5 flex flex-col items-center justify-center text-neutral-50 text-center"
 >
-  <Logo />
-  <h1 class="uppercase tracking-ch">Innovación, Talento y Empresas</h1>
+  <p
+    class="flex items-center gap-1 text-xl p-5 backdrop-blur bg-neutral-50/10 border border-neutral-50/10"
+  >
+    <CalendarEvent />{data.date}
+  </p>
+  <div class="my-auto">
+    <Logo />
+    <h1 class="uppercase tracking-ch">Innovación, Talento y Empresas</h1>
+  </div>
   <Countdown />
   <p>
-    Nos vemos en la <strong>{data.edition} edición</strong> de encuentro de talento
-    tecnológico de Madridfortech,
+    Nos vemos este {data.date} en la <strong>{data.edition} edición</strong> de encuentro
+    de talento tecnológico de Madridfortech,
     <br />
     online y en nuestro campus en <a
       href={data.legal.address.url}
@@ -21,5 +28,4 @@ import Countdown from "../components/Countdown.astro";
       class="underline">{data.legal.address.text}</a
     >
   </p>
-  <Background />
 </section>
