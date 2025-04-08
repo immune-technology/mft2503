@@ -1,11 +1,32 @@
+---
+import SEO from "../components/SEO.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  robots: string;
+  img: string;
+}
+
+const { title, description, keywords, canonical, robots, img } = Astro.props;
+---
+
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- <meta name="generator" content={Astro.generator} /> -->
-    <title>Astro Basics</title>
+    <SEO
+      title={title}
+      description={description}
+      keywords={keywords}
+      canonical={canonical}
+      robots={robots}
+      img={img}
+    />
   </head>
   <body
     class="overflow-y-scroll overflow-x-hidden bg-neutral-50 text-secondary font-sans leading-loose after:fixed after:top-0 after:left-0 after:w-full after:h-full after:-z-50"

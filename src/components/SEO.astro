@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  robots: string;
+  img: string;
+}
+
+const { title, description, keywords, canonical, robots, img } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content={robots} />
+
+<meta property="og:url" content={canonical} />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:title" content={title} />
+<meta name="image" property="og:image" content={img} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content={canonical} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="”twitter:url”" content={canonical} />
+<meta name="twitter:image:src" content={img} />
