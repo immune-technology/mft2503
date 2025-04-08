@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "theme(colors.red.600)",
         secondary: "theme(colors.red.950)",
+        background: "#050000",
       },
       container: {
         center: true,
