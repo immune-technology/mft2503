@@ -1,0 +1,20 @@
+---
+import data from "../assets/data.json";
+---
+
+<section
+  class="container flex flex-wrap items-center justify-center gap-10 py-10"
+>
+  {
+    data.business.map((item) => (
+      <img
+        src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/${item.src}`}
+        alt={item.alt}
+        width="128"
+        height="40"
+        loading="eager"
+        class="w-auto max-w-32 h-10 object-contain"
+      />
+    ))
+  }
+</section>
