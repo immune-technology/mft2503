@@ -1,0 +1,14 @@
+---
+import data from "../assets/data.json";
+---
+
+<footer class="p-5">
+  <p class="text-center">
+    Nos vemos este {data.date} en la <strong>{data.edition} edición</strong> de encuentro
+    de talento tecnológico de Madridfortech, online y en nuestro campus en <a
+      href={data.legal.address.url}
+      target="_blank"
+      class="underline">{data.legal.address.text}</a
+    >
+  </p>
+</footer>
