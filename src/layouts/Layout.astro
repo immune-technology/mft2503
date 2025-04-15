@@ -70,4 +70,65 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       opacity: 0;
     }
   }
+
+  /* Form */
+
+  .hbspt-form {
+    @apply backdrop-blur border border-neutral-50/10 p-5 h-full flex items-center;
+  }
+
+  form {
+    @apply flex flex-col gap-5 accent-primary w-full;
+  }
+
+  fieldset {
+    max-width: 100% !important;
+  }
+
+  .form-columns-2 {
+    @apply flex gap-[2%];
+  }
+
+  .input {
+    margin-right: 0 !important;
+  }
+
+  .hs-input:not([type="checkbox"]) {
+    width: 100% !important;
+    @apply min-h-10;
+  }
+
+  input,
+  select {
+    @apply bg-neutral-50/10 text-neutral-50 border border-neutral-50/10 px-2;
+  }
+
+  select {
+    appearance: none;
+  }
+
+  .inputs-list {
+    @apply flex gap-1 flex-wrap;
+  }
+
+  .hs-form-checkbox {
+    @apply bg-neutral-50/10 text-neutral-50 border border-neutral-50/10 px-2;
+  }
+
+  .hs-form-checkbox input[type="checkbox"] {
+    @apply hidden;
+  }
+
+  .hs-form-checkbox:has(input[type="checkbox"]:checked) {
+    @apply bg-primary text-neutral-50 border border-primary;
+  }
+
+  .hs-button {
+    @apply w-full bg-primary text-neutral-50 border border-primary min-h-10;
+  }
+
+  .hs-error-msg,
+  .hs-main-font-element {
+    @apply text-neutral-50/50 text-sm;
+  }
 </style>
