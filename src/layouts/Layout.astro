@@ -49,6 +49,10 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
     @apply bg-primary text-neutral-50;
   }
 
+  a {
+    @apply underline;
+  }
+
   /* Animations */
 
   .fadeIn {
@@ -100,7 +104,7 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
 
   input,
   select {
-    @apply bg-neutral-50/10 text-neutral-50 border border-neutral-50/10 px-2;
+    @apply bg-neutral-50/10 text-neutral-50 border border-neutral-50/10 px-2 rounded-none;
   }
 
   select {
