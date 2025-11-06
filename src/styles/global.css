@@ -103,6 +103,10 @@ option {
     @apply text-background;
 }
 
+.inputs-list {
+    @apply flex flex-wrap gap-2;
+}
+
 .hs-form-checkbox input[type="checkbox"] {
     @apply hidden;
 }
@@ -116,7 +120,7 @@ option {
 }
 
 .hs-form-checkbox span:hover {
-    @apply bg-neutral-50/10;
+    @apply bg-neutral-50/20;
 }
 
 .hs-button {
@@ -130,38 +134,4 @@ option {
 .hs-error-msg,
 .hs-main-font-element {
     @apply text-neutral-50/50 text-sm;
-}
-
-/* --- Dropdown áreas de interés (encaja con tema oscuro) --- */
-.hs_area_de_interes {
-    position: relative;
-}
-
-/* Botón del desplegable */
-.hs-dropdown {
-    @apply relative px-2 cursor-pointer select-none min-h-10 flex items-center w-full text-left;
-}
-
-/* Panel */
-.hs-options {
-    display: none;
-    @apply relative w-full;
-}
-
-.hs-dropdown.open+.hs-options {
-    display: block;
-}
-
-/* Cada opción */
-.hs-options .hs-form-checkbox span {
-    @apply min-h-10 flex items-center border-t-0;
-}
-
-.hs-options .hs-form-checkbox span:hover {
-    @apply bg-neutral-50/10;
-}
-
-/* Texto del botón cuando hay selección (opcional, para que no se rompa el layout) */
-.hs-dropdown--placeholder {
-    @apply text-neutral-50/60;
 }
