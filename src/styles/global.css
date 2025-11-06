@@ -139,7 +139,7 @@ select {
 
 /* Botón del desplegable */
 .hs-dropdown {
-    @apply relative px-2 cursor-pointer select-none min-h-10 flex items-center w-full;
+    @apply relative px-2 cursor-pointer select-none min-h-10 flex items-center w-full text-left;
 }
 
 /* Panel */
