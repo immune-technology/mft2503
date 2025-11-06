@@ -213,12 +213,6 @@ function enhanceDropdown(root) {
 
   updateButtonText();
   field.setAttribute(INIT_ATTR, "true");
-
-  // Marca el formulario como listo (para mostrar con transición)
-  const formContainer = field.closest(".hbspt-form");
-  if (formContainer) {
-    formContainer.setAttribute("data-ready", "");
-  }
 }
 
 // 1) Intento inmediato
@@ -234,17 +228,6 @@ const obs = new MutationObserver((mutations) => {
         node.matches?.(".hs_area_de_interes.hs-fieldtype-checkbox")
       ) {
         enhanceDropdown(document);
-      }
-      // Si aparece un formulario sin el campo personalizado, mostrarlo igual
-      if (
-        (node.querySelector?.(".hbspt-form") ||
-          node.matches?.(".hbspt-form")) &&
-        !node.querySelector?.(".hs_area_de_interes.hs-fieldtype-checkbox")
-      ) {
-        const form = node.matches?.(".hbspt-form")
-          ? node
-          : node.querySelector(".hbspt-form");
-        if (form) form.setAttribute("data-ready", "");
       }
     }
   }
