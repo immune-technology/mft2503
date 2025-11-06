@@ -7,7 +7,7 @@ import Section from "../components/Section.astro";
   <div class="flex gap-5">
     {
       data.people.map((item) => (
-        <div class="w-60 flex-shrink-0">
+        <div class="w-60 shrink-0">
           <img
             src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo}.webp`}
             alt={item.name}

@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+/* 1) Colores personalizados (v4 usa @theme) */
+@theme {
+    /* Alias semánticos a la paleta por defecto */
+    --color-primary: var(--color-red-600);
+    --color-secondary: var(--color-red-950);
+    --color-background: var(--color-slate-950);
+
+    /* 3) Letter spacing personalizado (tracking-*) */
+    --tracking-ch: 1ch;
+}
+
+/* 2) Container centrado con padding (reemplaza center: true + padding: "20px") */
+@utility container {
+    margin-inline: auto;
+    padding-inline: 20px;
+    /* equivalente a tu padding: "20px" */
+
+    /* Opcional: ajustes por breakpoint */
+    @variant sm {
+        padding-inline: 24px;
+    }
+
+    @variant lg {
+        padding-inline: 32px;
+    }
+
+    @variant xl {
+        padding-inline: 40px;
+    }
+}
+
+::selection {
+    @apply bg-primary text-neutral-50;
+}
+
+a {
+    @apply underline;
+}
+
+/* Animations */
+
+.fadeIn {
+    animation: fadeIn 500ms ease-in-out 500ms forwards;
+}
+
+.fadeOut {
+    animation: fadeOut 500ms ease-in-out 500ms forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+/* Form */
+
+.hbspt-form {
+    @apply backdrop-blur-3xl border border-neutral-50/10 p-5 h-full flex items-center opacity-0 transition-opacity duration-500 ease-in-out;
+}
+
+.hbspt-form[data-ready] {
+    @apply opacity-100;
+}
+
+form {
+    @apply flex flex-col gap-2 accent-primary w-full;
+}
+
+fieldset {
+    max-width: 100% !important;
+}
+
+.form-columns-2 {
+    @apply flex gap-[2%];
+}
+
+.input {
+    margin-right: 0 !important;
+}
+
+.hs-input:not([type="checkbox"]) {
+    width: 100% !important;
+    @apply min-h-10;
+}
+
+input,
+select,
+.hs-dropdown,
+.hs-form-checkbox span {
+    @apply bg-neutral-50/10 text-neutral-50 border border-neutral-50/10 px-2;
+}
+
+select {
+    @apply appearance-none;
+}
+
+.hs-form-checkbox input[type="checkbox"] {
+    @apply hidden;
+}
+
+.hs-form-checkbox input[type="checkbox"]:checked+span {
+    @apply bg-primary text-neutral-50;
+}
+
+.hs-form-checkbox span {
+    @apply block cursor-pointer;
+}
+
+.hs-form-checkbox span:hover {
+    @apply bg-neutral-50/10;
+}
+
+.hs-button {
+    @apply w-full bg-primary text-neutral-50 border border-primary min-h-10;
+}
+
+.hs-form-required {
+    @apply text-red-500;
+}
+
+.hs-error-msg,
+.hs-main-font-element {
+    @apply text-neutral-50/50 text-sm;
+}
+
+/* --- Dropdown áreas de interés (encaja con tema oscuro) --- */
+.hs_area_de_interes {
+    position: relative;
+}
+
+/* Botón del desplegable */
+.hs-dropdown {
+    @apply relative px-2 cursor-pointer select-none min-h-10 flex items-center w-full;
+}
+
+/* Panel */
+.hs-options {
+    display: none;
+    @apply relative w-full;
+}
+
+.hs-dropdown.open+.hs-options {
+    display: block;
+}
+
+/* Cada opción */
+.hs-options .hs-form-checkbox span {
+    @apply min-h-10 flex items-center border-t-0;
+}
+
+.hs-options .hs-form-checkbox span:hover {
+    @apply bg-neutral-50/10;
+}
+
+/* Texto del botón cuando hay selección (opcional, para que no se rompa el layout) */
+.hs-dropdown--placeholder {
+    @apply text-neutral-50/60;
+}

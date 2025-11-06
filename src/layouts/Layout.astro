@@ -1,5 +1,6 @@
 ---
 import SEO from "../components/SEO.astro";
+import "../styles/global.css";
 
 interface Props {
   title: string;
@@ -58,7 +59,7 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
     <!-- End Google Tag Manager -->
   </head>
   <body
-    class="overflow-x-hidden bg-background text-neutral-50 font-sans leading-loose"
+    class="overflow-y-scroll overflow-x-hidden bg-background text-neutral-50 font-sans leading-loose"
   >
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -80,105 +81,5 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
     <!-- End Google Tag Manager (noscript) -->
     <slot />
     <script src="../assets/js/main.js"></script>
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
-    ></script>
   </body>
 </html>
-
-<style is:global>
-  ::selection {
-    @apply bg-primary text-neutral-50;
-  }
-
-  a {
-    @apply underline;
-  }
-
-  /* Animations */
-
-  .fadeIn {
-    animation: fadeIn 500ms ease-in-out 500ms forwards;
-  }
-
-  .fadeOut {
-    animation: fadeOut 500ms ease-in-out 500ms forwards;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeOut {
-    to {
-      opacity: 0;
-    }
-  }
-
-  /* Form */
-
-  .hbspt-form {
-    @apply backdrop-blur border border-neutral-50/10 p-5 h-full flex items-center;
-  }
-
-  form {
-    @apply flex flex-col gap-5 accent-primary w-full;
-  }
-
-  fieldset {
-    max-width: 100% !important;
-  }
-
-  .form-columns-2 {
-    @apply flex gap-[2%];
-  }
-
-  .input {
-    margin-right: 0 !important;
-  }
-
-  .hs-input:not([type="checkbox"]) {
-    width: 100% !important;
-    @apply min-h-10;
-  }
-
-  input,
-  select {
-    @apply bg-neutral-50/10 text-neutral-50 border border-neutral-50/10 px-2 rounded-none;
-  }
-
-  select {
-    @apply appearance-none;
-  }
-
-  .inputs-list {
-    @apply flex gap-1 flex-wrap;
-  }
-
-  .hs-form-checkbox {
-    @apply bg-neutral-50/10 text-neutral-50 border border-neutral-50/10 px-2;
-  }
-
-  .hs-form-checkbox input[type="checkbox"] {
-    @apply hidden;
-  }
-
-  .hs-form-checkbox:has(input[type="checkbox"]:checked) {
-    @apply bg-primary text-neutral-50 border border-primary;
-  }
-
-  .hs-button {
-    @apply w-full bg-primary text-neutral-50 border border-primary min-h-10;
-  }
-
-  .hs-error-msg,
-  .hs-main-font-element {
-    @apply text-neutral-50/50 text-sm;
-  }
-</style>
