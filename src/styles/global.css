@@ -103,6 +103,10 @@ select {
     @apply appearance-none;
 }
 
+option {
+    @apply text-background;
+}
+
 .hs-form-checkbox input[type="checkbox"] {
     @apply hidden;
 }
