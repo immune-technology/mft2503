@@ -4,17 +4,26 @@ import Logo from "../assets/icons/Logo.astro";
 import Background from "../components/Background.astro";
 import Countdown from "../components/Countdown.astro";
 import Form from "../components/Form.astro";
+import Modal from "../components/Modal.astro";
 ---
 
 <section
-  class="relative w-full min-h-dvh p-5 grid lg:grid-cols-[1fr_512px] gap-5 text-neutral-50"
+  class="relative w-full min-h-dvh p-5 flex flex-col items-center justify-center text-center"
 >
-  <div class="flex flex-col justify-center items-center text-center py-10">
-    <p class="uppercase tracking-ch mb-5">{data.date}</p>
-    <Logo />
-    <h1 class="uppercase tracking-ch mb-5">Innovación, Talento y Empresas</h1>
-    <Countdown />
-  </div>
-  <Form />
+  <p class="uppercase tracking-ch mb-5">{data.date}</p>
+  <Logo />
+  <h1 class="uppercase tracking-ch mb-5">Innovación, Talento y Empresas</h1>
+  <Countdown />
+  <button
+    class="bg-primary py-2 px-4 cursor-pointer"
+    onclick="openFormModal()"
+    type="button"
+  >
+    ¡Apúntate!
+  </button>
   <Background />
 </section>
+
+<Modal id="FormModal" title="¡Apúntate al evento!">
+  <Form />
+</Modal>

@@ -1,0 +1,96 @@
+---
+import X from "../assets/icons/X.astro";
+
+interface Props {
+  id: string;
+  title?: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<div
+  id={id}
+  class="modal fixed inset-0 z-90 hidden items-center justify-center p-5 backdrop-blur-3xl"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby={title ? `${id}-title` : undefined}
+>
+  <div
+    class="relative w-full max-w-2xl max-h-[90dvh] overflow-y-auto bg-background border border-neutral-50/10 p-5 md:p-10"
+    role="document"
+  >
+    <button
+      class="modal-close absolute top-5 right-5 hover:text-primary cursor-pointer"
+      aria-label="Cerrar modal"
+    >
+      <X />
+    </button>
+
+    {
+      title && (
+        <h2 id={`${id}-title`} class="text-3xl md:text-5xl mb-5">
+          {title}
+        </h2>
+      )
+    }
+
+    <slot />
+  </div>
+</div>
+
+<script>
+  function initModal(modalId: string) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+
+    const closeBtn = modal.querySelector(".modal-close");
+
+    // Función para abrir
+    const openModal = () => {
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+      // Enfoca el botón de cerrar para accesibilidad
+      (closeBtn as HTMLElement)?.focus();
+    };
+
+    // Función para cerrar
+    const closeModal = () => {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      document.body.style.overflow = "";
+    };
+
+    // Cerrar con botón X
+    closeBtn?.addEventListener("click", closeModal);
+
+    // Cerrar al hacer clic fuera del contenido
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Cerrar con tecla Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeModal();
+      }
+    });
+
+    // Exponer funciones globalmente para poder abrir desde cualquier lugar
+    (window as any)[`open${modalId}`] = openModal;
+    (window as any)[`close${modalId}`] = closeModal;
+  }
+
+  // Inicializar todos los modales en la página
+  document.addEventListener("DOMContentLoaded", () => {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach((modal) => {
+      if (modal.id) {
+        initModal(modal.id);
+      }
+    });
+  });
+</script>
