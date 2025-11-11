@@ -3,37 +3,20 @@
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
 </script>
-
 <script is:inline>
-  // Guardia global anti-duplicado por submission
   window.__hsLeadPushed = false;
 
   hbspt.forms.create({
     portalId: "6604339",
     formId: "800d6421-df30-4faf-9e14-f4a553e62b33",
     region: "na1",
-    onFormSubmitted: function ($form) {
-      if (window.__hsLeadPushed) return; // 👈 evita múltiples push
+    onFormSubmitted: function () {
+      if (window.__hsLeadPushed) return;
       window.__hsLeadPushed = true;
-
-      // (Opcional) recoge campos si están en el DOM
-      var get = (n) => {
-        try {
-          var el = $form[0].querySelector('[name="' + n + '"]');
-          return (el && el.value) || undefined;
-        } catch (e) {
-          return undefined;
-        }
-      };
-
       window.dataLayer.push({
         event: "hubspotFormSubmit",
         formId: "800d6421-df30-4faf-9e14-f4a553e62b33",
-        email: get("email"),
-        firstname: get("firstname") || get("firstName"),
-        lastname: get("lastname") || get("lastName"),
       });
-      // console.log('hubspotFormSubmit enviado');
     },
   });
 </script>
