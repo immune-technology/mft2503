@@ -8,5 +8,23 @@
     portalId: "6604339",
     formId: "800d6421-df30-4faf-9e14-f4a553e62b33",
     region: "na1",
+    onFormSubmitted: function ($form) {
+      // Extrae algunos campos (opcionales)
+      var get = (n) => {
+        try {
+          var el = $form[0].querySelector('[name="' + n + '"]');
+          return (el && el.value) || undefined;
+        } catch (e) {
+          return undefined;
+        }
+      };
+      window.dataLayer.push({
+        event: "hubspotFormSubmit",
+        formId: "800d6421-df30-4faf-9e14-f4a553e62b33",
+        email: get("email"),
+        firstname: get("firstname") || get("firstName"),
+        lastname: get("lastname") || get("lastName"),
+      });
+    },
   });
 </script>
