@@ -1,9 +1,14 @@
-<div class="border border-red-950/10 p-2 h-full">
-  <slot />
-</div>
+---
+interface Props {
+  title: string;
+  time: string;
+}
 
-<style>
-  div :global(h3) {
-    @apply font-bold;
-  }
-</style>
+const { title, time } = Astro.props;
+---
+
+<div class="bg-slate-200 p-2 h-full min-w-64">
+  <h3 class="font-bold">{title}</h3>
+  <slot />
+  <p><small>{time}</small></p>
+</div>

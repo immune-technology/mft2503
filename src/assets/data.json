@@ -12,94 +12,36 @@
       "url": "https://www.google.es/maps/place/IMMUNE+Technology+Institute/@40.4496289,-3.6945551,17z/data=!3m2!4b1!5s0xd4228e343d1ae51:0xdff3b6df8b3f856a!4m6!3m5!1s0xd4229189dbac4db:0x5400e56fb9abf5b1!8m2!3d40.4496248!4d-3.6919802!16s%2Fg%2F11h6g486xb?hl=es&entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D"
     }
   },
-  "programs": [
-    "Data Science",
-    "Ciberseguridad",
-    "Desarrollo Web",
-    "Inteligencia Artificial",
-    "Cloud Computing",
-    "Diseño UX/UI"
+  "seo": {
+    "title": "Madrid4Tech VI Edición - Evento de Tecnología por IMMUNE",
+    "description": "Únete a Madrid4Tech VI Edición, el evento tecnológico organizado por IMMUNE Technology Institute. Conecta con profesionales y empresas líderes en tecnología.",
+    "keywords": "Madrid4Tech, evento tecnológico, IMMUNE Technology Institute, profesionales de tecnología, empresas de tecnología"
+  },
+  "hero": [
+    "Descubre las ideas, proyectos y tendencias que están transformando el futuro digital. Inspírate con líderes que convierten la tecnología en impacto real.",
+    "Explora las soluciones más disruptivas en IA, Data, Cloud y Ciberseguridad. Vive la tecnología en acción con demos, talleres y experiencias interactivas.",
+    "Conecta con empresas líderes, participa en retos de talento y encuentra tu próxima oportunidad profesional en el corazón del ecosistema tech."
   ],
-  "people": [
+  "talento": [
+    "Madrid4Tech regresa este 26 de Noviembre del 2025 en su VI edición, reuniendo a las empresas líderes en tecnología y a los profesionales más brillantes en un evento interactivo y dinámico.",
+    "Con el objetivo de forjar conexiones significativas entre empresas innovadoras y talentos emergentes, este evento es una oportunidad única para aquellos especializados en Data Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud Computing y Diseño UX/UI, enorgulleciendonos contar con la participación de reconocidas empresas del sector tecnológico, las cuales están en búsqueda activa de profesionales apasionados y con ganas de transforma el futuro.",
+    "Estas organizaciones son pioneras en sus respectivos campos, ofreciendo no solo oportunidades de empleo sino también la posibilidad de trabajar en proyectos."
+  ],
+  "speakers": [
     {
-      "photo": "raul_marin",
-      "name": "Raúl Marín",
-      "position": "Design UX/UI Area Director",
-      "logo": ["immune-logo.svg", "IMMUNE"]
+      "photo": "",
+      "name": "",
+      "position": "",
+      "logo": ["", ""]
     }
   ],
-  "business": [
-    {
-      "src": "singular_solving-logo.svg",
-      "alt": "Singular Solving"
-    },
-    {
-      "src": "entaina-logo.webp",
-      "alt": "Entaina"
-    },
-    {
-      "src": "bip-logo.svg",
-      "alt": "BIP xTech"
-    },
-    {
-      "src": "diverger-logo-white.svg",
-      "alt": "Diverger"
-    },
-    {
-      "src": "iberdrola-logo.svg",
-      "alt": "Iberdrola"
-    },
-    {
-      "src": "caixabank_tech-logo-white.webp",
-      "alt": "CaixaBank Tech"
-    },
-    {
-      "src": "ever3-logo.svg",
-      "alt": "Ever3"
-    },
-    {
-      "src": "funditec-logo.webp",
-      "alt": "Funditec"
-    },
-    {
-      "src": "telefonica-logo.svg",
-      "alt": "Telefonica"
-    },
-    {
-      "src": "xvalue-logo-white.webp",
-      "alt": "Xvalue"
-    },
-    {
-      "src": "darfe-logo.webp",
-      "alt": "Darfe"
-    },
-    {
-      "src": "aws-logo-white.svg",
-      "alt": "AWS"
-    },
-    {
-      "src": "accenture-logo-white.svg",
-      "alt": "Accenture"
-    },
-    {
-      "src": "cyber_talent-logo.svg",
-      "alt": "Cybertalent"
-    },
-    {
-      "src": "teatro_real-logo-white.webp",
-      "alt": "Teatro Real"
-    },
-    {
-      "src": "randstad-logo.svg",
-      "alt": "Randstad"
-    },
-    {
-      "src": "scl_consulting-logo-white.webp",
-      "alt": "SCL Consulting"
-    },
-    {
-      "src": "talentoo-logo.webp",
-      "alt": "Talentoo"
-    }
+  "hub": [
+    "Madrid como hub de talento tecnológico",
+    "El evento definitivo de generación de empleo y oportunidades vinculadas a la innovación y tecnología. Dirigido a los interesados en conocer el presente del sector Tech, a quienes buscan empleo y quieren poner a prueba sus habilidades y a los que quieren reorientar su carrera en: Data Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud Computing y Diseño UX/UI."
+  ],
+  "audiencia": [
+    "Talento Junior con su etapa formativa finalizada -o realizando posgrado- que ya han tenido algunas experiencias profesionales y seguir adquiriendo conocimiento en las primeras etapas de su carrera profesional.",
+    "Talento Intermedio con algunos años de experiencia que desean seguir creciendo en sus carreras profesionales asumiendo mayor responsabilidad y nuevos desafíos tecnológicos.",
+    "Talento Experimentado que desea elevar su nivel de responsabilidad, gestionando equipos o bien a través de procesos de upskilling y reskilling que les permitan situarse de forma más competitiva."
   ]
 }

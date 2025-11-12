@@ -1,23 +1,13 @@
 @import "tailwindcss";
 
-/* 1) Colores personalizados (v4 usa @theme) */
 @theme {
-    /* Alias semánticos a la paleta por defecto */
-    --color-primary: var(--color-red-600);
-    --color-secondary: var(--color-red-950);
-    --color-background: var(--color-slate-950);
-
-    /* 3) Letter spacing personalizado (tracking-*) */
     --tracking-ch: 1ch;
 }
 
-/* 2) Container centrado con padding (reemplaza center: true + padding: "20px") */
 @utility container {
     margin-inline: auto;
     padding-inline: 20px;
-    /* equivalente a tu padding: "20px" */
 
-    /* Opcional: ajustes por breakpoint */
     @variant sm {
         padding-inline: 24px;
     }
@@ -32,7 +22,7 @@
 }
 
 ::selection {
-    @apply bg-primary text-neutral-50;
+    @apply bg-red-600 text-neutral-50;
 }
 
 a {
@@ -68,7 +58,7 @@ a {
 }
 
 form {
-    @apply flex flex-col gap-2 accent-primary w-full;
+    @apply flex flex-col gap-2 accent-red-600 w-full;
 }
 
 fieldset {
@@ -100,7 +90,7 @@ select {
 }
 
 option {
-    @apply text-background;
+    @apply text-slate-950;
 }
 
 .inputs-list {
@@ -112,7 +102,7 @@ option {
 }
 
 .hs-form-checkbox input[type="checkbox"]:checked+span {
-    @apply bg-primary text-neutral-50;
+    @apply bg-red-600 text-neutral-50;
 }
 
 .hs-form-checkbox span {
@@ -124,7 +114,7 @@ option {
 }
 
 .hs-button {
-    @apply w-full bg-primary text-neutral-50 border border-primary min-h-10;
+    @apply w-full bg-red-600 text-neutral-50 border border-red-600 min-h-10;
 }
 
 .hs-form-required {
@@ -134,4 +124,19 @@ option {
 .hs-error-msg,
 .hs-main-font-element {
     @apply text-neutral-50/50 text-sm;
+}
+
+/* Table */
+
+caption {
+    caption-side: bottom;
+}
+
+th,
+td {
+    @apply border border-slate-200 p-2;
+}
+
+tr>td:first-of-type {
+    @apply md:whitespace-nowrap;
 }

@@ -1,0 +1,68 @@
+<div class="sticky top-0 flex z-90">
+  <button
+    id="addToCalendarButton"
+    class="bg-red-600 w-full py-2 px-4 cursor-pointer uppercase"
+  >
+    Añadir a mi calendario
+  </button>
+  <button
+    class="bg-red-700 py-2 px-4 cursor-pointer uppercase"
+    onclick="openFormModal()"
+    type="button"
+  >
+    ¡Apúntate!
+  </button>
+</div>
+
+<script is:inline>
+  // Datos del evento
+  const eventTitle = "Madridfortech VI Edición";
+  const eventStartDate = "20251126T100000"; // Formato: AAAAMMDDTHHMMSS
+  const eventEndDate = "20251126T193000";
+  const eventDescription =
+    "VI edición del evento Madrid4Tech organizado por IMMUNE Technology Institute para unir empresas y profesionales de la tecnología.";
+  const eventLocation = "P.º de la Castellana, 89, Tetuán, 28046 Madrid";
+
+  document
+    .getElementById("addToCalendarButton")
+    .addEventListener("click", function () {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Si es un dispositivo Apple (iOS)
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        addToAppleCalendar();
+      }
+      // Si es Outlook (deberás tener un archivo .ics para descargar)
+      else if (/Windows/.test(userAgent) || /Outlook/.test(userAgent)) {
+        addToOutlookCalendar();
+      }
+      // Google Calendar por defecto
+      else {
+        addToGoogleCalendar();
+      }
+    });
+
+  // Google Calendar
+  function addToGoogleCalendar() {
+    const googleCalendarURL = `https://calendar.google.com/calendar/r/eventedit?text=${encodeURIComponent(eventTitle)}&dates=${eventStartDate}/${eventEndDate}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}`;
+    window.open(googleCalendarURL, "_blank");
+  }
+
+  // Outlook Calendar (formato .ics)
+  function addToOutlookCalendar() {
+    const outlookCalendarURL = `data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:${encodeURIComponent(eventTitle)}%0D%0ADESCRIPTION:${encodeURIComponent(eventDescription)}%0D%0ADTSTART:${eventStartDate}%0D%0ADTEND:${eventEndDate}%0D%0ALOCATION:${encodeURIComponent(eventLocation)}%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR`;
+    const downloadLink = document.createElement("a");
+    downloadLink.href = outlookCalendarURL;
+    downloadLink.download = "evento.ics";
+    downloadLink.click();
+  }
+
+  // Apple Calendar (archivo .ics)
+  function addToAppleCalendar() {
+    const appleCalendarURL = `data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ASUMMARY:${encodeURIComponent(eventTitle)}%0D%0ADESCRIPTION:${encodeURIComponent(eventDescription)}%0D%0ADTSTART:${eventStartDate}%0D%0ADTEND:${eventEndDate}%0D%0ALOCATION:${encodeURIComponent(eventLocation)}%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR`;
+    const downloadLink = document.createElement("a");
+    downloadLink.href = appleCalendarURL;
+    downloadLink.download = "evento.ics";
+    downloadLink.click();
+  }
+</script>

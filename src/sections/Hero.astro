@@ -3,27 +3,22 @@ import data from "../assets/data.json";
 import Logo from "../assets/icons/Logo.astro";
 import Background from "../components/Background.astro";
 import Countdown from "../components/Countdown.astro";
-import Form from "../components/Form.astro";
-import Modal from "../components/Modal.astro";
+import Section from "../components/Section.astro";
 ---
 
-<section
-  class="relative w-full min-h-dvh p-5 flex flex-col items-center justify-center text-center"
+<Section
+  className="bg-slate-950 w-full min-h-dvh p-5 flex flex-col items-center justify-center text-center"
 >
   <p class="uppercase tracking-ch mb-5">{data.date}</p>
   <Logo />
   <h1 class="uppercase tracking-ch mb-5">Innovación, Talento y Empresas</h1>
   <Countdown />
   <button
-    class="bg-primary py-2 px-4 cursor-pointer"
+    class="bg-red-600 py-2 px-4 cursor-pointer uppercase"
     onclick="openFormModal()"
     type="button"
   >
     ¡Apúntate!
   </button>
   <Background />
-</section>
-
-<Modal id="FormModal" title="¡Apúntate al evento!">
-  <Form />
-</Modal>
+</Section>

@@ -3,6 +3,22 @@ import data from "../assets/data.json";
 ---
 
 <footer class="container p-5">
+  {
+    data.speakers[0].photo !== "" && (
+      <div class="flex flex-wrap items-center justify-center gap-10 mb-5">
+        {data.speakers.map((item) => (
+          <img
+            src={`https://immune.institute/wp-content/uploads/${item.logo[0]}`}
+            alt={item.logo[1]}
+            width="128"
+            height="40"
+            loading="lazy"
+            class="w-auto max-w-32 h-10 object-contain"
+          />
+        ))}
+      </div>
+    )
+  }
   <p class="text-center">
     Nos vemos este {data.date} en la <strong>{data.edition} edición</strong> de encuentro
     de talento tecnológico de Madridfortech, online y en nuestro campus en <a
@@ -11,4 +27,21 @@ import data from "../assets/data.json";
       class="underline">{data.legal.address.text}</a
     >
   </p>
+  <nav class="flex gap-4 flex-wrap justify-center">
+    <a
+      href="https://immune.institute/aviso-legal/"
+      target="_blank"
+      class="text-slate-500 hover:text-slate-100">Aviso legal</a
+    >
+    <a
+      href="https://immune.institute/politica-de-privacidad/"
+      target="_blank"
+      class="text-slate-500 hover:text-slate-100">Política de privacidad</a
+    >
+    <a
+      href="https://immune.institute/politica-de-cookies/"
+      target="_blank"
+      class="text-slate-500 hover:text-slate-100">Política de cookies</a
+    >
+  </nav>
 </footer>

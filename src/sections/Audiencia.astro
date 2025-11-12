@@ -1,0 +1,46 @@
+---
+import data from "../assets/data.json";
+import Image from "astro/components/Image.astro";
+import HubImage from "../assets/hub.webp";
+import Section from "../components/Section.astro";
+---
+
+<Section title="Audiencia">
+  <div class="container grid lg:grid-cols-3 lg:gap-10">
+    <div>
+      <span class="text-6xl font-bold text-red-600">35%</span>
+      <h2 class="text-2xl font-light uppercase">
+        <strong>Talento Junior</strong>
+      </h2>
+      <span>0 a 3 años</span>
+      <p class="text-slate-400">
+        {data.audiencia[0]}
+      </p>
+    </div>
+    <div>
+      <span class="text-6xl font-bold text-red-600">45%</span>
+      <h2 class="text-2xl font-light uppercase">
+        <strong>Talento intermedio</strong>
+      </h2>
+      <span>3 a 8 años</span>
+      <p class="text-slate-400">
+        {data.audiencia[1]}
+      </p>
+    </div>
+    <div>
+      <span class="text-6xl font-bold text-red-600">35%</span>
+      <h2 class="text-2xl font-light uppercase">
+        <strong>Talento emperimentado</strong>
+      </h2>
+      <span>8+ años</span>
+      <p class="text-slate-400">
+        {data.audiencia[2]}
+      </p>
+    </div>
+  </div>
+  <Image
+    src={HubImage}
+    alt="Buscan Talento"
+    class="absolute top-0 right-0 -z-10 w-full h-full object-cover opacity-10"
+  />
+</Section>

@@ -17,11 +17,11 @@ const { id, title } = Astro.props;
   aria-labelledby={title ? `${id}-title` : undefined}
 >
   <div
-    class="relative w-full max-w-2xl max-h-[90dvh] overflow-y-auto bg-background border border-neutral-50/10 p-5 md:p-10"
+    class="relative w-full max-w-2xl max-h-[90dvh] overflow-y-auto bg-slate-950 border border-neutral-50/10 p-5 md:p-10"
     role="document"
   >
     <button
-      class="modal-close absolute top-5 right-5 hover:text-primary cursor-pointer"
+      class="modal-close absolute top-5 right-5 hover:text-red-600 cursor-pointer"
       aria-label="Cerrar modal"
     >
       <X />

@@ -1,0 +1,21 @@
+---
+import Section from "../components/Section.astro";
+import BuscanTalento from "../assets/buscan_talento.webp";
+import data from "../assets/data.json";
+import Image from "astro/components/Image.astro";
+---
+
+<Section title="Talento" subtitle="digital">
+  <div class="container mb-10">
+    {
+      data.talento.map((paragraph) => (
+        <p class="max-w-prose mb-4">{paragraph}</p>
+      ))
+    }
+  </div>
+  <Image
+    src={BuscanTalento}
+    alt="Buscan Talento"
+    class="absolute top-0 right-0 -z-10 w-full h-full object-cover mask-l-from-0 mask-l-to-75% hidden md:block"
+  />
+</Section>

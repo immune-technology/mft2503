@@ -1,0 +1,41 @@
+---
+import data from "../assets/data.json";
+import Image from "astro/components/Image.astro";
+import Section from "../components/Section.astro";
+import HubImage from "../assets/hub.webp";
+import m4t1 from "../assets/m4t-1.webp";
+import m4t2 from "../assets/m4t-2.webp";
+import m4t3 from "../assets/m4t-3.webp";
+import m4t4 from "../assets/m4t-4.webp";
+import m4t5 from "../assets/m4t-5.webp";
+import m4t6 from "../assets/m4t-6.webp";
+import m4t7 from "../assets/m4t-7.webp";
+import m4t8 from "../assets/m4t-8.webp";
+---
+
+<Section>
+  <div class="container grid md:grid-cols-2 gap-4">
+    <h2 class="text-5xl lg:text-6xl font-thin uppercase">
+      {data.hub[0]}
+    </h2>
+    <p class="max-w-prose">
+      {data.hub[1]}
+    </p>
+  </div>
+  <Image
+    src={HubImage}
+    alt="Buscan Talento"
+    class="absolute top-0 right-0 -z-10 w-full h-full object-cover opacity-10"
+  />
+</Section>
+
+<div class="grid grid-cols-2 md:grid-cols-4">
+  <Image src={m4t1} alt="Antiguas ediciones" />
+  <Image src={m4t2} alt="Antiguas ediciones" />
+  <Image src={m4t3} alt="Antiguas ediciones" />
+  <Image src={m4t4} alt="Antiguas ediciones" />
+  <Image src={m4t5} alt="Antiguas ediciones" />
+  <Image src={m4t6} alt="Antiguas ediciones" />
+  <Image src={m4t7} alt="Antiguas ediciones" />
+  <Image src={m4t8} alt="Antiguas ediciones" />
+</div>

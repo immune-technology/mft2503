@@ -1,0 +1,43 @@
+---
+import Box from "../assets/icons/Box.astro";
+import data from "../assets/data.json";
+import Rocket from "../assets/icons/Rocket.astro";
+import UserSearch from "../assets/icons/UserSearch.astro";
+import Section from "../components/Section.astro";
+---
+
+<Section light>
+  <div
+    class="container text-center grid lg:grid-cols-[auto_2px_auto_2px_auto] lg:items-center gap-10"
+  >
+    <div class="flex flex-col items-center justify-center">
+      <Rocket size={64} />
+      <h2 class="text-2xl font-light uppercase mb-4">
+        <strong>Innovación</strong>
+      </h2>
+      <p class="text-slate-400">
+        {data.hero[0]}
+      </p>
+    </div>
+    <span class="w-1 h-2/4 bg-red-600 hidden lg:block"></span>
+    <div class="flex flex-col items-center justify-center">
+      <Box size={64} />
+      <h2 class="text-2xl font-light uppercase mb-4">
+        <strong>Tecnología</strong>
+      </h2>
+      <p class="text-slate-400">
+        {data.hero[1]}
+      </p>
+    </div>
+    <span class="w-1 h-2/4 bg-red-600 hidden lg:block"></span>
+    <div class="flex flex-col items-center justify-center">
+      <UserSearch size={64} />
+      <h2 class="text-2xl font-light uppercase mb-4">
+        <strong>Empleo</strong>
+      </h2>
+      <p class="text-slate-400">
+        {data.hero[2]}
+      </p>
+    </div>
+  </div>
+</Section>

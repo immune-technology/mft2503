@@ -3,25 +3,34 @@ import data from "../assets/data.json";
 import Section from "../components/Section.astro";
 ---
 
-<Section id="ponentes" title="Ponentes confirmados">
-  <div class="flex gap-5">
-    {
-      data.people.map((item) => (
-        <div class="w-60 shrink-0">
-          <img
-            src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${item.photo}.webp`}
-            alt={item.name}
-            width="240"
-            height="240"
-            loading="eager"
-            class="saturate-0"
-          />
-          <h3>{item.name}</h3>
-          <p>
-            <small>{item.position}</small>
-          </p>
-        </div>
-      ))
-    }
-  </div>
-</Section>
+{
+  data.speakers[0].photo !== "" && (
+    <Section title="Ponentes" subtitle="confirmados">
+      <div class="container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+        {data.speakers.map((item) => (
+          <div class="bg-slate-900 flex flex-col items-center text-center pt-10 leading-none">
+            <h3 class="text-xl">{item.name}</h3>
+            <p class="text-slate-400 mb-5">
+              <small>{item.position}</small>
+            </p>
+            <img
+              src={`https://immune.institute/wp-content/uploads/${item.logo[0]}`}
+              alt={item.logo[1]}
+              width="128"
+              height="40"
+              loading="lazy"
+              class="-mb-5 w-auto max-w-32 h-10 object-contain"
+            />
+            <img
+              src={`https://immune.institute/wp-content/uploads/${item.photo}.webp`}
+              alt={item.name}
+              width="256"
+              height="256"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </Section>
+  )
+}

@@ -1,15 +1,27 @@
 ---
 interface Props {
-  title: string;
-  id: string;
+  className?: string;
+  title?: string;
+  subtitle?: string;
+  light?: boolean;
 }
 
-const { title, id } = Astro.props;
+const { className, title, subtitle, light } = Astro.props;
 ---
 
-<section id={id} class="overflow-hidden py-20">
-  <h2 class="container text-6xl md:text-9xl font-thin mb-10">
-    {title}
-  </h2>
+<section
+  class:list={[
+    className,
+    "overflow-hidden py-32 border-b-2 border-red-950 relative isolate",
+    { "bg-slate-100 text-slate-900": light },
+  ]}
+>
+  {
+    title && (
+      <h2 class="container text-5xl md:text-6xl mb-5">
+        {title} <span class="font-thin opacity-50">{subtitle}</span>
+      </h2>
+    )
+  }
   <slot />
 </section>
