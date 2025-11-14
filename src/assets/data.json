@@ -27,6 +27,12 @@
     "Con el objetivo de forjar conexiones significativas entre empresas innovadoras y talentos emergentes, este evento es una oportunidad única para aquellos especializados en Data Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud Computing y Diseño UX/UI, enorgulleciendonos contar con la participación de reconocidas empresas del sector tecnológico, las cuales están en búsqueda activa de profesionales apasionados y con ganas de transforma el futuro.",
     "Estas organizaciones son pioneras en sus respectivos campos, ofreciendo no solo oportunidades de empleo sino también la posibilidad de trabajar en proyectos."
   ],
+  "pillars": [
+    "IA y Automatización",
+    "Ciber guerra y defensa",
+    "Data y sostenibilidad",
+    "Extrategia digital y UX"
+  ],
   "speakers": [
     {
       "photo": "",
