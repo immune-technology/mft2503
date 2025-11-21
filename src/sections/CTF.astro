@@ -6,7 +6,7 @@ import Image from "astro/components/Image.astro";
 import CTFLogo from "../assets/icons/CTFLogo.astro";
 ---
 
-<Section>
+<Section id="ctf" className="z-90">
   <div class="container grid lg:grid-cols-2 gap-10 items-center">
     <div>
       <h2 class="text-5xl md:text-6xl mb-5">
@@ -14,11 +14,11 @@ import CTFLogo from "../assets/icons/CTFLogo.astro";
       </h2>
       {data.ctf.map((paragraph) => <p class="max-w-prose mb-4">{paragraph}</p>)}
       <button
-        class="bg-red-600 py-2 px-4 cursor-pointer uppercase"
+        class="bg-red-600 py-2 px-4 cursor-pointer"
         onclick="openCTFFormModal()"
         type="button"
       >
-        ¡Apúntate!
+        ¡Apúntate al challenge!
       </button>
     </div>
     <CTFLogo />

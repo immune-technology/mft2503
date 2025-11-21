@@ -1,15 +1,17 @@
 ---
 interface Props {
+  id?: string;
   className?: string;
   title?: string;
   subtitle?: string;
   light?: boolean;
 }
 
-const { className, title, subtitle, light } = Astro.props;
+const { id, className, title, subtitle, light } = Astro.props;
 ---
 
 <section
+  id={id}
   class:list={[
     className,
     "overflow-hidden py-32 border-b-2 border-red-950 relative isolate",
