@@ -22,6 +22,10 @@
     "Explora las soluciones más disruptivas en IA, Data, Cloud y Ciberseguridad. Vive la tecnología en acción con demos, talleres y experiencias interactivas.",
     "Conecta con empresas líderes, participa en retos de talento y encuentra tu próxima oportunidad profesional en el corazón del ecosistema tech."
   ],
+  "ctf": [
+    "El Talento Ético al Descubierto. Desafía la Red. Domina el juego. Protege el futuro.",
+    "Un reto híbrido donde la comunidad, la institución y el talento emergente se encuentran en un único espacio: el hacking ético hecho experiencia, competición y aprendizaje en tiempo real."
+  ],
   "talento": [
     "Madrid4Tech regresa este 26 de Noviembre del 2025 en su VI edición, reuniendo a las empresas líderes en tecnología y a los profesionales más brillantes en un evento interactivo y dinámico.",
     "Con el objetivo de forjar conexiones significativas entre empresas innovadoras y talentos emergentes, este evento es una oportunidad única para aquellos especializados en Data Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud Computing y Diseño UX/UI, enorgulleciendonos contar con la participación de reconocidas empresas del sector tecnológico, las cuales están en búsqueda activa de profesionales apasionados y con ganas de transforma el futuro.",
@@ -35,10 +39,55 @@
   ],
   "speakers": [
     {
-      "photo": "",
-      "name": "",
-      "position": "",
-      "logo": ["", ""]
+      "photo": "angel_nino",
+      "name": "Ángel Niño",
+      "position": "Concejal de Innovación y Emprendimiento",
+      "logo": ["ayuntamiento_madrid-logo-white.svg", "Ayuntamiento de Madrid"]
+    },
+    {
+      "photo": "fernando_escobar",
+      "name": "Fernando Escobar",
+      "position": "Subdirector General de Ciudadanía, Talento y Emprendimiento",
+      "logo": [
+        "mtd_gobierno_espana-logo.svg",
+        "Ministerio de Transformación Digital"
+      ]
+    },
+    {
+      "photo": "aristides_guimera",
+      "name": "Arístides Guimera",
+      "position": "Mobile Tech Lead & Content Creator",
+      "logo": ["aritidevs-logo.svg", "AritiDevs"]
+    },
+    {
+      "photo": "eduardo_gistau",
+      "name": "Eduardo Gistau",
+      "position": "Global Head of Cybersecurity",
+      "logo": ["hiberus-logo-white.svg", "Hiberus"]
+    },
+    {
+      "photo": "vicente_de_los_rios",
+      "name": "Vicente de los Rios",
+      "position": "CEO de Líderes y Digitales",
+      "logo": ["lyd-logo-white.webp", "Líderes y Digitales"]
+    },
+    {
+      "photo": "jose_romero",
+      "name": "José Romero",
+      "position": "Director General y Especialista de ciberseguros",
+      "logo": ["sector_asegurador-logo.svg", "Sector Asegurador"]
+    },
+    {
+      "photo": "enrique_poblador",
+      "name": "Enrique Poblador de Miguel",
+      "position": "Coronel del Ejército de Tierra",
+      "logo": ["ejercito_tierra-logo-white.svg", "Ejército de Tierra"]
+    },
+    {
+      "photo": "david_marugan",
+      "name": "David Marugán",
+      "position": "Presales Manager",
+      "logo": ["titanium-logo-white.webp", "Titanium"]
     }
   ],
   "hub": [

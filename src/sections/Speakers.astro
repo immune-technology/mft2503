@@ -10,7 +10,7 @@ import Section from "../components/Section.astro";
         {data.speakers.map((item) => (
           <div class="bg-slate-900 flex flex-col items-center text-center pt-10 leading-none">
             <h3 class="text-xl">{item.name}</h3>
-            <p class="text-slate-400 mb-5">
+            <p class="text-slate-400 mx-5 mb-5">
               <small>{item.position}</small>
             </p>
             <img
@@ -19,7 +19,7 @@ import Section from "../components/Section.astro";
               width="128"
               height="40"
               loading="lazy"
-              class="-mb-5 w-auto max-w-32 h-10 object-contain"
+              class="mt-auto w-auto max-w-32 h-10 object-contain"
             />
             <img
               src={`https://immune.institute/wp-content/uploads/${item.photo}.webp`}

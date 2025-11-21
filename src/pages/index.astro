@@ -14,6 +14,8 @@ import Hub from "../sections/Hub.astro";
 import Dots from "../sections/Dots.astro";
 import Audiencia from "../sections/Audiencia.astro";
 import Pilares from "../sections/Pilares.astro";
+import CTF from "../sections/CTF.astro";
+import CTFForm from "../components/CTFForm.astro";
 ---
 
 <Layout
@@ -29,7 +31,8 @@ import Pilares from "../sections/Pilares.astro";
   <Dots />
   <Talento />
   <Pilares />
-  <!-- <Speakers /> -->
+  <CTF />
+  <Speakers />
   <!-- <Agenda /> -->
   <Hub />
   <Campus />
@@ -37,5 +40,8 @@ import Pilares from "../sections/Pilares.astro";
   <Footer />
   <Modal id="FormModal" title="¡Apúntate al evento!">
     <Form />
+  </Modal>
+  <Modal id="CTFFormModal" title="¡Apúntate al CTF!">
+    <CTFForm />
   </Modal>
 </Layout>

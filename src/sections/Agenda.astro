@@ -9,8 +9,9 @@ import Section from "../components/Section.astro";
       <thead>
         <tr>
           <th>HORARIO</th>
-          <th align="center" style="width: 50%;">ESPACIO 1</th>
-          <th align="center" style="width: 50%;">ESPACIO 2</th>
+          <th align="center" style="width: 33.333%;">ESPACIO 1</th>
+          <th align="center" style="width: 33.333%;">ESPACIO 2</th>
+          <th align="center" style="width: 33.333%;">ESPACIO 3</th>
         </tr>
       </thead>
       <tbody>
@@ -18,17 +19,24 @@ import Section from "../components/Section.astro";
           <td>9:00 - 9:30h.</td>
           <td></td>
           <td></td>
+          <td></td>
         </tr>
         <tr>
           <td>9:30 - 10:00h.</td>
+          <td><Event title="Bienvenida" time="10:00 - 10:30 (30mins)" /></td>
           <td></td>
-          <td></td>
+          <td
+            ><Event
+              title="Sala hacker - secur0"
+              time="9:30 - 10:00 (30mins)"
+            /></td
+          >
         </tr>
         <tr>
           <td>10:00 - 10:30h.</td>
-          <td colspan="2">
-            <Event title="Bienvenida" time="10:00 - 10:30 (30mins)" />
-          </td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
         <tr>
           <td>10:30 - 11:00h.</td>
