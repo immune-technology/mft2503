@@ -72,6 +72,24 @@
       "logo": ["lyd-logo-white.webp", "Líderes y Digitales"]
     },
     {
+      "photo": "angel_galan",
+      "name": "Ángel Galán",
+      "position": "BIP",
+      "logo": ["bip-logo.svg", "BIP"]
+    },
+    {
+      "photo": "pablo_fernandez",
+      "name": "Pablo Fernández",
+      "position": "Data Tech Lead",
+      "logo": ["repsol-logo-white.svg", "Repsol"]
+    },
+    {
+      "photo": "alberto_candelas",
+      "name": "Alberto Candelas",
+      "position": "Operations Intelligence & Transformation Manager",
+      "logo": ["mas_orange-logo-white.svg", "Mas Orange"]
+    },
+    {
       "photo": "jose_romero",
       "name": "José Romero",
       "position": "Director General y Especialista de ciberseguros",
@@ -88,6 +106,12 @@
       "name": "David Marugán",
       "position": "Presales Manager",
       "logo": ["titanium-logo-white.webp", "Titanium"]
+    },
+    {
+      "photo": "raul_marin",
+      "name": "Raúl Marín",
+      "position": "Shift+R Lab",
+      "logo": ["shiftr_lab-logo-white.svg", "Shift+R Lab"]
     }
   ],
   "logos": [
