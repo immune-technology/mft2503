@@ -16,6 +16,16 @@ import data from "../assets/data.json";
             class="w-auto max-w-32 h-10 object-contain"
           />
         ))}
+        {data.logos.map((item) => (
+          <img
+            src={`https://immune.institute/wp-content/uploads/${item[0]}`}
+            alt={item[1]}
+            width="128"
+            height="40"
+            loading="lazy"
+            class="w-auto max-w-32 h-10 object-contain"
+          />
+        ))}
       </div>
     )
   }

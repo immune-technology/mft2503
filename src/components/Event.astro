@@ -1,14 +1,22 @@
 ---
 interface Props {
   title: string;
-  time: string;
+  type?: string;
+  time?: string;
 }
 
-const { title, time } = Astro.props;
+const { title, type, time } = Astro.props;
 ---
 
-<div class="bg-slate-200 p-2 h-full min-w-64">
+<div class="bg-slate-200 p-2 h-full min-w-64 flex flex-col gap-2">
+  {type && <small class="uppercase font-bold text-slate-500">{type}</small>}
   <h3 class="font-bold">{title}</h3>
   <slot />
-  <p><small>{time}</small></p>
+  {
+    time && (
+      <p class="mt-auto">
+        <small>{time}</small>
+      </p>
+    )
+  }
 </div>

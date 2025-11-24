@@ -90,6 +90,15 @@
       "logo": ["titanium-logo-white.webp", "Titanium"]
     }
   ],
+  "logos": [
+    ["telefonica_tech-logo.svg", "Telefónica Tech"],
+    ["incibe-logo-white.svg", "Incibe"],
+    ["cruz_roja-logo-white.webp", "Cruz Roja"],
+    ["immune-logo-white.svg", "IMMUNE Technology Institute"],
+    ["sanitas-logo.svg", "Sanitas"],
+    ["inecco-logo-white.svg", "Inecco"],
+    ["verisure-logo.webp", "Verisure Securitas Direct"]
+  ],
   "hub": [
     "Madrid como hub de talento tecnológico",
     "El evento definitivo de generación de empleo y oportunidades vinculadas a la innovación y tecnología. Dirigido a los interesados en conocer el presente del sector Tech, a quienes buscan empleo y quieren poner a prueba sus habilidades y a los que quieren reorientar su carrera en: Data Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud Computing y Diseño UX/UI."

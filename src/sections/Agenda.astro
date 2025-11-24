@@ -5,126 +5,359 @@ import Section from "../components/Section.astro";
 
 <Section title="Agenda" light>
   <div role="region" tabindex="0" class="container overflow-auto w-full">
-    <table class="h-full w-full border-spacing-px border-collapse">
+    <table
+      class="h-full w-full border-spacing-px border-collapse leading-normal"
+    >
       <thead>
         <tr>
           <th>HORARIO</th>
           <th align="center" style="width: 33.333%;">ESPACIO 1</th>
           <th align="center" style="width: 33.333%;">ESPACIO 2</th>
           <th align="center" style="width: 33.333%;">ESPACIO 3</th>
+          <th align="center" style="width: 33.333%;">ESPACIO 4</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>9:00 - 9:30h.</td>
+          <td>9:00 - 9:15h.</td>
+          <td></td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>9:30 - 10:00h.</td>
-          <td><Event title="Bienvenida" time="10:00 - 10:30 (30mins)" /></td>
+          <td>9:15 - 9:30h.</td>
           <td></td>
-          <td
-            ><Event
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9:30 - 9:45h.</td>
+          <td colspan="4">
+            <Event title="Acreditaciones" time="9:30 - 9:45 (15mins)" />
+          </td>
+        </tr>
+        <tr>
+          <td>10:00 - 10:15h.</td>
+          <td rowspan="2">
+            <Event title="Bienvenida" time="10:00 - 10:30 (30mins)">
+              <p class="text-slate-500">
+                Juan Riva (IMMUNE Technology Institute), Ángel Niño
+                (Ayuntamiento de Madrid) y Fernando Escobar (Ministerio de
+                Transformación Digital)
+              </p>
+            </Event>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:15 - 10:30h.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:30 - 10:45h.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:45 - 11:00h.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:00 - 11:15h.</td>
+          <td></td>
+          <td rowspan="3">
+            <Event
+              title="Brechas de información internacional y robo de credenciales - Atando cabos"
+              type="Ponencia"
+              time="11:00 - 12:00 (1h)"
+            >
+              <p class="text-slate-500">Jose Romero Salvador</p>
+            </Event>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:15 - 11:30h.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:30 - 11:45h.</td>
+          <td rowspan="3">
+            <Event
+              title="La IA sí puede quitarte el trabajo"
+              type="Ponencia"
+              time="11:30 - 12:15 (45mins)"
+            >
+              <p class="text-slate-500">
+                AristiDevs (Mobile Tech Lead & Content Creator)
+              </p>
+            </Event>
+          </td>
+          <td rowspan="18">
+            <Event
               title="Sala hacker - secur0"
-              time="9:30 - 10:00 (30mins)"
-            /></td
-          >
-        </tr>
-        <tr>
-          <td>10:00 - 10:30h.</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>10:30 - 11:00h.</td>
-          <td></td>
+              type="CTF"
+              time="11:30 - 18:00 (5h y 30mins)"
+            >
+              <p class="text-slate-500">secur0 - INCIBE</p>
+              <ul class="text-sm">
+                <li>PREMIO 1: 50% beca Máster online en Ciberseguridad</li>
+                <li>PREMIO 2: RayBan Meta Wayfarer (Gen 1)</li>
+                <li>PREMIO 3: Certificación Comptia - Ethical Hacker Pro</li>
+              </ul>
+            </Event>
+          </td>
           <td></td>
         </tr>
         <tr>
-          <td>11:00 - 11:30h.</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>11:30 - 12:00h.</td>
+          <td>11:45 - 12:00h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>12:00 - 12:30h.</td>
+          <td>12:00 - 12:15h.</td>
+          <td></td>
+          <td rowspan="9">
+            <Event
+              title="Simulador de Igualdad: una experiencia transformadora para el entorno laboral de Cruz Roja en Madrid"
+              type="Ponencia"
+              time="12:00 - 14:15 (2h y 15mins)"
+            >
+              <p class="text-slate-500">Cruz Roja</p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>12:15 - 12:30h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>12:30 - 13:00h.</td>
+          <td>12:30 - 12:45h.</td>
+          <td></td>
+          <td rowspan="4">
+            <Event
+              title="Innovación Tecnológica en la Enseñanza Militar"
+              type="Ponencia"
+              time="12:30 - 13:30 (1h)"
+            >
+              <p class="text-slate-500">Enrique Poblado</p>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>12:45 - 13:00h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13:00 - 13:15h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13:15 - 13:30h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13:30 - 13:45h.</td>
+          <td rowspan="3">
+            <Event
+              title="Del SOC Tradicional al SOC Predictivo: UEBA y la Automatización"
+              type="Ponencia"
+              time="13:30 - 14:15 (30mins)"
+            >
+              <p class="text-slate-500">Eduardo Gistau (Hibarus)</p>
+            </Event>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13:45 - 14:00h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14:00 - 14:15h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14:15 - 14:30h.</td>
+          <td></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>13:00 - 13:30h.</td>
+          <td>14:30 - 14:45h.</td>
           <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>13:30 - 14:00h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>14:00 - 14:30h.</td>
+          <td>14:45 - 15:00h.</td>
           <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>14:30 - 15:00h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>15:00 - 15:30h.</td>
+          <td>15:00 - 15:15h.</td>
+          <td rowspan="4">
+            <Event
+              title="Del uso al impacto: Cómo transformar tecnología en crecimiento y talento"
+              type="Ponencia"
+              time="15:00 - 16:00 (1h)"
+            >
+              <p class="text-slate-500">
+                Vicente de los Ríos (Líderes y Digitales)
+              </p>
+            </Event>
+          </td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>15:30 - 16:00h.</td>
+          <td>15:15 - 15:30h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>16:00 - 16:30h.</td>
+          <td>15:30 - 15:45h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>16:30 - 17:00h.</td>
+          <td>15:45 - 16:00h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>17:00 - 17:30h.</td>
+          <td>16:00 - 16:15h.</td>
+          <td rowspan="4">
+            <Event
+              title="GenAI Next: Tendencias del Futuro"
+              type="Mesa redonda"
+              time="16:00 - 17:00 (1h)"
+            >
+              <p class="text-slate-500">
+                Ángel Galán (BIP), Pablo Fernández (Repsol) y Alberto Candelas
+                (Masorange)
+              </p>
+            </Event>
+          </td>
+          <td></td>
+          <td rowspan="3">
+            <Event
+              title="Cómo usar los programas de divulgación de vulnerabilidades para encontrar trabajo como hacker ético"
+              type="Ponencia"
+              time="16:00 - 16:45 (45mins)"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>16:15 - 16:30h.</td>
+          <td rowspan="4">
+            <Event
+              title="Generative UI: la interfaz que viene"
+              type="Taller"
+              time="16:15 - 17:15 (1h)"
+            >
+              <p class="text-slate-500">Raúl Marín</p>
+            </Event>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16:30 - 16:45h.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16:45 - 17:00h.</td>
+          <td rowspan="5">
+            <Event
+              title="Sala hacker - secur0"
+              type="CTF"
+              time="11:30 - 18:00 (5h y 30mins)"
+            >
+              <ul class="text-sm">
+                <li>PREMIO 1: 50% beca Máster online en Ciberseguridad</li>
+                <li>PREMIO 2: RayBan Meta Wayfarer (Gen 1)</li>
+                <li>PREMIO 3: Certificación Comptia - Ethical Hacker Pro</li>
+              </ul>
+            </Event>
+          </td>
+        </tr>
+        <tr>
+          <td>17:00 - 17:15h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>17:30 - 18:00h.</td>
+          <td>17:15 - 17:30h.</td>
           <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>18:00 - 18:30h.</td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>18:30 - 19:00h.</td>
+          <td>17:30 - 17:45h.</td>
+          <td></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>19:00 - 19:30h.</td>
+          <td>17:45 - 18:00h.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18:00 - 18:15h.</td>
+          <td>
+            <Event
+              title="Entrega de premios CTF"
+              time="18:00 - 18:15 (15mins)"
+            />
+          </td>
+          <td rowspan="3">
+            <Event
+              title="Russia-Ukraine Radio Warfare"
+              type="Ponencia"
+              time="18:00 - 18:45 (45mins)"
+            >
+              <p class="text-slate-500">David Marugán</p>
+            </Event>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18:15 - 18:30h.</td>
+          <td rowspan="3">
+            <Event
+              title="Networking y cierre del evento"
+              time="18:15 - 19:00 (45mins)"
+            />
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18:30 - 18:45h.</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18:45 - 19:00h.</td>
+          <td></td>
           <td></td>
           <td></td>
         </tr>
