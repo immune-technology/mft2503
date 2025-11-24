@@ -6,6 +6,7 @@ import second from "../assets/ctf-2o.webp";
 import third from "../assets/ctf-3er.webp";
 import certification from "../assets/ctf-3er-certification.webp";
 import rayban from "../assets/ctf-1er-rayban.webp";
+import incibeLogos from "../assets/incibe-logos.svg";
 import data from "../assets/data.json";
 import Image from "astro/components/Image.astro";
 import CTFLogo from "../assets/icons/CTFLogo.astro";
@@ -74,3 +75,7 @@ import CTFLogo from "../assets/icons/CTFLogo.astro";
     class="absolute top-0 right-0 -z-10 w-full h-full object-cover"
   />
 </Section>
+
+<div class="bg-slate-50">
+  <Image src={incibeLogos} alt="Buscan Talento" class="container p-5" />
+</div>
