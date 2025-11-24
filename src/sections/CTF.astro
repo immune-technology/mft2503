@@ -29,40 +29,43 @@ import CTFLogo from "../assets/icons/CTFLogo.astro";
     <CTFLogo />
   </div>
   <div class="container grid md:grid-cols-3 gap-2 leading-normal">
-    <div
-      class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col xl:flex-row gap-4 items-start justify-between"
-    >
-      <div>
-        <Image src={first} alt="1er premio" class="w-auto h-10 mb-4" />
-        <p>
-          RayBan Meta Wayfarer (Gen 1) + 50% beca Máster online en
-          Ciberseguridad
-        </p>
+    <div class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col gap-4">
+      <div class="flex gap-4 items-center justify-between">
+        <Image src={first} alt="1er premio" class="w-auto h-10" />
+        <Image
+          src={rayban}
+          alt="RayBan Meta Wayfarer (Gen 1)"
+          class="w-auto h-20"
+        />
       </div>
-      <Image
-        src={rayban}
-        alt="RayBan Meta Wayfarer (Gen 1)"
-        class="w-auto h-20"
-      />
+      <p>
+        RayBan Meta Wayfarer (Gen 1) + 50% beca Máster online en Ciberseguridad
+      </p>
     </div>
-    <div
-      class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col gap-4 items-start"
-    >
-      <Image src={second} alt="2o premio" class="w-auto h-10" />
+    <div class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col gap-4">
+      <div class="flex gap-4 items-center justify-between">
+        <Image src={second} alt="2o premio" class="w-auto h-10" />
+        <img
+          src="https://immune.institute/wp-content/uploads/immune-logo-white.svg"
+          alt="IMMUNE Technology Institute"
+          width="128"
+          height="40"
+          loading="lazy"
+          class="w-auto max-w-32 h-20 object-contain"
+        />
+      </div>
       <p>50% beca Máster online en Ciberseguridad</p>
     </div>
-    <div
-      class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col xl:flex-row gap-4 items-start justify-between"
-    >
-      <div>
-        <Image src={third} alt="3er premio" class="w-auto h-10 mb-4" />
-        <p>Certificación Comptia - Ethical Hacker Pro</p>
+    <div class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col gap-4">
+      <div class="flex gap-4 items-center justify-between">
+        <Image src={third} alt="3er premio" class="w-auto h-10" />
+        <Image
+          src={certification}
+          alt="Certificación Comptia - Ethical Hacker Pro"
+          class="w-auto h-20"
+        />
       </div>
-      <Image
-        src={certification}
-        alt="Certificación Comptia - Ethical Hacker Pro"
-        class="w-auto h-20"
-      />
+      <p>Certificación Comptia - Ethical Hacker Pro</p>
     </div>
   </div>
   <Image
