@@ -1,13 +1,18 @@
 ---
 import Section from "../components/Section.astro";
 import Background from "../assets/web_hacking_challenge-background.webp";
+import first from "../assets/ctf-1er.webp";
+import second from "../assets/ctf-2o.webp";
+import third from "../assets/ctf-3er.webp";
+import certification from "../assets/ctf-3er-certification.webp";
+import rayban from "../assets/ctf-1er-rayban.webp";
 import data from "../assets/data.json";
 import Image from "astro/components/Image.astro";
 import CTFLogo from "../assets/icons/CTFLogo.astro";
 ---
 
 <Section id="ctf" className="z-90">
-  <div class="container grid lg:grid-cols-2 gap-10 items-center">
+  <div class="container grid lg:grid-cols-2 gap-10 items-center mb-10">
     <div>
       <h2 class="text-5xl md:text-6xl mb-5">
         Web Hacking <span class="font-thin opacity-50">Challenge</span>
@@ -22,6 +27,43 @@ import CTFLogo from "../assets/icons/CTFLogo.astro";
       </button>
     </div>
     <CTFLogo />
+  </div>
+  <div class="container grid md:grid-cols-3 gap-2 leading-normal">
+    <div
+      class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col xl:flex-row gap-4 items-start justify-between"
+    >
+      <div>
+        <Image src={first} alt="1er premio" class="w-auto h-10 mb-4" />
+        <p>
+          RayBan Meta Wayfarer (Gen 1) + 50% beca Máster online en
+          Ciberseguridad
+        </p>
+      </div>
+      <Image
+        src={rayban}
+        alt="RayBan Meta Wayfarer (Gen 1)"
+        class="w-auto h-20"
+      />
+    </div>
+    <div
+      class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col gap-4 items-start"
+    >
+      <Image src={second} alt="2o premio" class="w-auto h-10" />
+      <p>50% beca Máster online en Ciberseguridad</p>
+    </div>
+    <div
+      class="p-5 bg-slate-50/10 backdrop-blur-3xl flex flex-col xl:flex-row gap-4 items-start justify-between"
+    >
+      <div>
+        <Image src={third} alt="3er premio" class="w-auto h-10 mb-4" />
+        <p>Certificación Comptia - Ethical Hacker Pro</p>
+      </div>
+      <Image
+        src={certification}
+        alt="Certificación Comptia - Ethical Hacker Pro"
+        class="w-auto h-20"
+      />
+    </div>
   </div>
   <Image
     src={Background}
