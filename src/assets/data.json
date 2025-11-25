@@ -102,16 +102,22 @@
       "logo": ["ejercito_tierra-logo-white.svg", "Ejército de Tierra"]
     },
     {
-      "photo": "david_marugan",
-      "name": "David Marugán",
-      "position": "Presales Manager",
-      "logo": ["titanium-logo-white.webp", "Titanium"]
-    },
-    {
       "photo": "raul_marin",
       "name": "Raúl Marín",
       "position": "Shift+R Lab",
       "logo": ["shiftr_lab-logo-white.svg", "Shift+R Lab"]
+    },
+    {
+      "photo": "angela_alvarez",
+      "name": "Ángela Álvarez",
+      "position": "People Director en HP",
+      "logo": ["hp-icon.svg", "HP"]
+    },
+    {
+      "photo": "david_marugan",
+      "name": "David Marugán",
+      "position": "Presales Manager",
+      "logo": ["titanium-logo-white.webp", "Titanium"]
     }
   ],
   "logos": [

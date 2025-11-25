@@ -6,7 +6,7 @@ import Section from "../components/Section.astro";
 {
   data.speakers[0].photo !== "" && (
     <Section title="Ponentes" subtitle="confirmados">
-      <div class="container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div class="container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
         {data.speakers.map((item) => (
           <div class="bg-slate-900 flex flex-col items-center text-center pt-10 leading-none">
             <h3 class="text-xl">{item.name}</h3>
