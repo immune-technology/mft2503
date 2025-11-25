@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../assets/data.json";
+import Section from "../components/Section.astro";
+import PuertaForm from "../components/PuertaForm.astro";
+---
+
+<Layout
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  canonical="https://madridfortech.com/cruz-roja"
+  robots="index, follow"
+  img="https://madridfortech.com/share.webp"
+>
+  <Section title="Registro">
+    <div class="container">
+      <PuertaForm />
+    </div>
+  </Section>
+</Layout>

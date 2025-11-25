@@ -1,0 +1,22 @@
+<script is:inline src="https://js.hsforms.net/forms/embed/v2.js" charset="utf-8"
+></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+</script>
+<script is:inline>
+  window.__hsLeadPushed = false;
+
+  hbspt.forms.create({
+    portalId: "6604339",
+    formId: "ce74fa60-01e4-476f-9ca3-876e5b76a7fc",
+    region: "na1",
+    onFormSubmitted: function () {
+      if (window.__hsLeadPushed) return;
+      window.__hsLeadPushed = true;
+      window.dataLayer.push({
+        event: "hubspotFormSubmit",
+        formId: "ce74fa60-01e4-476f-9ca3-876e5b76a7fc",
+      });
+    },
+  });
+</script>
