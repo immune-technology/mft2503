@@ -19,20 +19,6 @@ import Section from "../components/Section.astro";
       </thead>
       <tbody>
         <tr>
-          <td>9:00 - 9:15h.</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>9:15 - 9:30h.</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
           <td>9:30 - 9:45h.</td>
           <td colspan="4">
             <Event title="Acreditaciones" time="9:30 - 9:45 (15mins)" />
@@ -61,7 +47,17 @@ import Section from "../components/Section.astro";
         </tr>
         <tr>
           <td>10:30 - 10:45h.</td>
-          <td></td>
+          <td rowspan="3">
+            <Event
+              title="En la revolución de la IA, estrategias humanas"
+              type="Ponencia"
+              time="10:30 - 11:15 (45mins)"
+            >
+              <p class="text-slate-500">
+                Eli Garcia (Fundadora y Strategic Activator)
+              </p>
+            </Event>
+          </td>
           <td></td>
           <td></td>
           <td></td>
@@ -71,12 +67,10 @@ import Section from "../components/Section.astro";
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
         </tr>
         <tr>
           <td>11:00 - 11:15h.</td>
-          <td></td>
-          <td rowspan="3">
+          <td rowspan="4">
             <Event
               title="Brechas de información internacional y robo de credenciales - Atando cabos"
               type="Ponencia"
@@ -130,7 +124,6 @@ import Section from "../components/Section.astro";
         </tr>
         <tr>
           <td>11:45 - 12:00h.</td>
-          <td></td>
           <td></td>
         </tr>
         <tr>
@@ -189,15 +182,23 @@ import Section from "../components/Section.astro";
               <p class="text-slate-500">Eduardo Gistau (Hibarus)</p>
             </Event>
           </td>
-          <td></td>
+          <td rowspan="2">
+            <Event
+              title="Cómo afrontar tu entrada al mercado laboral"
+              type="Ponencia"
+              time="13:30 - 14:00 (30mins)"
+            >
+              <p class="text-slate-500">
+                Alícia Mayo (IT Recruitment) y Rubén García (IT Recruitment)
+              </p>
+            </Event>
+          </td>
         </tr>
         <tr>
           <td>13:45 - 14:00h.</td>
-          <td></td>
         </tr>
         <tr>
           <td>14:00 - 14:15h.</td>
-          <td></td>
         </tr>
         <tr>
           <td>14:15 - 14:30h.</td>

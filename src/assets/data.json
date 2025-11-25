@@ -54,6 +54,12 @@
       ]
     },
     {
+      "photo": "eli_garcia",
+      "name": "Eli Garcia",
+      "position": "Fundadora y Strategic Activator",
+      "logo": ["beon-logo.webp", "Beon4health"]
+    },
+    {
       "photo": "aristides_guimera",
       "name": "Arístides Guimera",
       "position": "Mobile Tech Lead & Content Creator",
@@ -100,6 +106,18 @@
       "name": "Enrique Poblador de Miguel",
       "position": "Coronel del Ejército de Tierra",
       "logo": ["ejercito_tierra-logo-white.svg", "Ejército de Tierra"]
+    },
+    {
+      "photo": "alicia_mayo",
+      "name": "Alícia Mayo",
+      "position": "IT Recruitment",
+      "logo": ["talentoo-logo.webp", "Talentoo"]
+    },
+    {
+      "photo": "ruben_garcia",
+      "name": "Rubén García",
+      "position": "IT Recruitment",
+      "logo": ["talentoo-logo.webp", "Talentoo"]
     },
     {
       "photo": "raul_marin",
