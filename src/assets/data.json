@@ -51,6 +51,42 @@
       "logo": ["aritidevs-logo.svg", "AritiDevs"]
     },
     {
+      "photo": "david_alonso",
+      "name": "David Alonso",
+      "position": "Director del Nodo Aeroespacial",
+      "logo": [
+        "redes_emprendimiento_digital-logo-white.svg",
+        "Redes de Emprendimiento Digital"
+      ]
+    },
+    {
+      "photo": "elena_santana",
+      "name": "Elena Santana",
+      "position": "Directora del Nodo Salud",
+      "logo": [
+        "redes_emprendimiento_digital-logo-white.svg",
+        "Redes de Emprendimiento Digital"
+      ]
+    },
+    {
+      "photo": "maria_cano",
+      "name": "María Cano",
+      "position": "Directora del Nodo Greentech",
+      "logo": [
+        "redes_emprendimiento_digital-logo-white.svg",
+        "Redes de Emprendimiento Digital"
+      ]
+    },
+    {
+      "photo": "jorge_fernandez_retech",
+      "name": "Jorge Fernández",
+      "position": "Moderador",
+      "logo": [
+        "redes_emprendimiento_digital-logo-white.svg",
+        "Redes de Emprendimiento Digital"
+      ]
+    },
+    {
       "photo": "eduardo_gistau",
       "name": "Eduardo Gistau",
       "position": "Global Head of Cybersecurity",
@@ -143,6 +179,7 @@
       "redes_emprendimiento_digital-logo-white.svg",
       "Redes de Emprendimiento Digital"
     ],
+    ["secur0-logo-white.svg", "Secur0"],
     ["telefonica_tech-logo.svg", "Telefónica Tech"],
     ["incibe-logo-white.svg", "Incibe"],
     ["cruz_roja-logo-white.webp", "Cruz Roja"],
