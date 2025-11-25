@@ -6,16 +6,6 @@ import data from "../assets/data.json";
   {
     data.speakers[0].photo !== "" && (
       <div class="flex flex-wrap items-center justify-center gap-10 mb-5">
-        {data.speakers.map((item) => (
-          <img
-            src={`https://immune.institute/wp-content/uploads/${item.logo[0]}`}
-            alt={item.logo[1]}
-            width="128"
-            height="40"
-            loading="lazy"
-            class="w-auto max-w-32 h-10 object-contain"
-          />
-        ))}
         {data.logos.map((item) => (
           <img
             src={`https://immune.institute/wp-content/uploads/${item[0]}`}
