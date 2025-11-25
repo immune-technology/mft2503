@@ -1,5 +1,4 @@
 ---
-import data from "../assets/data.json";
 import Image from "astro/components/Image.astro";
 import Section from "../components/Section.astro";
 import HubImage from "../assets/hub.webp";
@@ -16,10 +15,15 @@ import m4t8 from "../assets/m4t-8.webp";
 <Section>
   <div class="container grid md:grid-cols-2 gap-4">
     <h2 class="text-5xl lg:text-6xl font-thin uppercase">
-      {data.hub[0]}
+      Madrid como hub de talento tecnológico
     </h2>
     <p class="max-w-prose">
-      {data.hub[1]}
+      El evento definitivo de generación de empleo y oportunidades vinculadas a
+      la innovación y tecnología. Dirigido a los interesados en conocer el
+      presente del sector Tech, a quienes buscan empleo y quieren poner a prueba
+      sus habilidades y a los que quieren reorientar su carrera en: Data
+      Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud
+      Computing y Diseño UX/UI.
     </p>
   </div>
   <Image

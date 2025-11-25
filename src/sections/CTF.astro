@@ -7,7 +7,6 @@ import third from "../assets/ctf-3er.webp";
 import certification from "../assets/ctf-3er-certification.webp";
 import rayban from "../assets/ctf-1er-rayban.webp";
 import IncibeLogos from "../assets/incibe-logos.svg";
-import data from "../assets/data.json";
 import Image from "astro/components/Image.astro";
 import CTFLogo from "../assets/icons/CTFLogo.astro";
 ---
@@ -18,7 +17,19 @@ import CTFLogo from "../assets/icons/CTFLogo.astro";
       <h2 class="text-5xl md:text-6xl mb-5">
         Web Hacking <span class="font-thin opacity-50">Challenge</span>
       </h2>
-      {data.ctf.map((paragraph) => <p class="max-w-prose mb-4">{paragraph}</p>)}
+      <p class="max-w-prose mb-4">
+        El Web Hacking Challenge es un CTF híbrido estilo Bug Bounty con 10
+        retos web basados en vulnerabilidades reales, donde los participantes
+        pueden detectar y explotar fallos en un entorno controlado, competir en
+        un scoreboard en tiempo real y aprender con apoyo de un Hacker Híbrido.
+      </p>
+      <p class="max-w-prose mb-4">
+        El evento incluye una charla de secur0 sobre cómo usar los programas de
+        divulgación de vulnerabilidades para iniciar una carrera en hacking
+        ético, y se desarrolla entre las 11:30 y las 18:15 con fases de
+        competición, pausa, sesión formativa y una recta final antes de la
+        entrega de tres premios.
+      </p>
       <button
         class="bg-red-600 py-2 px-4 cursor-pointer"
         onclick="openCTFFormModal()"

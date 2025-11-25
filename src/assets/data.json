@@ -22,21 +22,6 @@
     "Explora las soluciones más disruptivas en IA, Data, Cloud y Ciberseguridad. Vive la tecnología en acción con demos, talleres y experiencias interactivas.",
     "Conecta con empresas líderes, participa en retos de talento y encuentra tu próxima oportunidad profesional en el corazón del ecosistema tech."
   ],
-  "ctf": [
-    "El Web Hacking Challenge es un CTF híbrido estilo Bug Bounty con 10 retos web basados en vulnerabilidades reales, donde los participantes pueden detectar y explotar fallos en un entorno controlado, competir en un scoreboard en tiempo real y aprender con apoyo de un Hacker Híbrido.",
-    "El evento incluye una charla de secur0 sobre cómo usar los programas de divulgación de vulnerabilidades para iniciar una carrera en hacking ético, y se desarrolla entre las 11:30 y las 18:15 con fases de competición, pausa, sesión formativa y una recta final antes de la entrega de tres premios."
-  ],
-  "talento": [
-    "Madrid4Tech regresa este 26 de Noviembre del 2025 en su VI edición, reuniendo a las empresas líderes en tecnología y a los profesionales más brillantes en un evento interactivo y dinámico.",
-    "Con el objetivo de forjar conexiones significativas entre empresas innovadoras y talentos emergentes, este evento es una oportunidad única para aquellos especializados en Data Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud Computing y Diseño UX/UI, enorgulleciendonos contar con la participación de reconocidas empresas del sector tecnológico, las cuales están en búsqueda activa de profesionales apasionados y con ganas de transforma el futuro.",
-    "Estas organizaciones son pioneras en sus respectivos campos, ofreciendo no solo oportunidades de empleo sino también la posibilidad de trabajar en proyectos."
-  ],
-  "pillars": [
-    "IA y Automatización",
-    "Ciber guerra y defensa",
-    "Data y sostenibilidad",
-    "Extrategia digital y UX"
-  ],
   "speakers": [
     {
       "photo": "angel_nino",
@@ -154,6 +139,10 @@
     ["shiftr_lab-logo-white.svg", "Shift+R Lab"],
     ["hp-icon.svg", "HP"],
     ["titanium-logo-white.webp", "Titanium"],
+    [
+      "redes_emprendimiento_digital-logo-white.svg",
+      "Redes de Emprendimiento Digital"
+    ],
     ["telefonica_tech-logo.svg", "Telefónica Tech"],
     ["incibe-logo-white.svg", "Incibe"],
     ["cruz_roja-logo-white.webp", "Cruz Roja"],
@@ -161,14 +150,5 @@
     ["sanitas-logo.svg", "Sanitas"],
     ["ineco-logo-white.webp", "Ineco"],
     ["verisure-logo.webp", "Verisure Securitas Direct"]
-  ],
-  "hub": [
-    "Madrid como hub de talento tecnológico",
-    "El evento definitivo de generación de empleo y oportunidades vinculadas a la innovación y tecnología. Dirigido a los interesados en conocer el presente del sector Tech, a quienes buscan empleo y quieren poner a prueba sus habilidades y a los que quieren reorientar su carrera en: Data Science, Ciberseguridad, Desarrollo Web, Inteligencia Artificial, Cloud Computing y Diseño UX/UI."
-  ],
-  "audiencia": [
-    "Talento Junior con su etapa formativa finalizada -o realizando posgrado- que ya han tenido algunas experiencias profesionales y seguir adquiriendo conocimiento en las primeras etapas de su carrera profesional.",
-    "Talento Intermedio con algunos años de experiencia que desean seguir creciendo en sus carreras profesionales asumiendo mayor responsabilidad y nuevos desafíos tecnológicos.",
-    "Talento Experimentado que desea elevar su nivel de responsabilidad, gestionando equipos o bien a través de procesos de upskilling y reskilling que les permitan situarse de forma más competitiva."
   ]
 }
