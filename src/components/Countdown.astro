@@ -1,8 +1,15 @@
-<p id="countdown" class="text-4xl mb-5">
-  <span id="days"></span>
-  <span id="hours"></span>
-  <span id="minutes"></span>
-  <span id="seconds"></span>
+<p id="countdown">
+  <span id="days" class="text-4xl mb-5"></span>
+  <span id="hours" class="text-4xl mb-5"></span>
+  <span id="minutes" class="text-4xl mb-5"></span>
+  <span id="seconds" class="text-4xl mb-5"></span>
+  <button
+    class="bg-red-600 py-2 px-4 cursor-pointer uppercase flex mx-auto mt-4"
+    onclick="openFormModal()"
+    type="button"
+  >
+    ¡Apúntate!
+  </button>
 </p>
 
 <script is:inline>
@@ -31,7 +38,7 @@
     if (diff < 0) {
       clearInterval(interval);
       document.getElementById("countdown").innerHTML =
-        'Enlaces a zoom:<br /><a href="https://immune-institute.zoom.us/s/83508567015?from=join#success" target="_blank">Espacio 1</a> | <a href="https://zoom.us/s/82351579222?from=join#success" target="_blank">Espacio 2</a>';
+        'Enlaces a zoom: <a href="https://immune-institute.zoom.us/s/83508567015?from=join#success" target="_blank">Espacio 1</a>, <a href="https://zoom.us/s/82351579222?from=join#success" target="_blank">Espacio 2</a>, <a href="https://zoom.us/s/82351579222?from=join#success" target="_blank">Espacio 3</a> y <a href="https://zoom.us/s/82351579222?from=join#success" target="_blank">Espacio 4</a>';
     }
   }
 
