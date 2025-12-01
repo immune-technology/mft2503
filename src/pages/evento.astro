@@ -1,0 +1,47 @@
+---
+import Sticky from "../components/Sticky.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../sections/Footer.astro";
+import Speakers from "../sections/Speakers.astro";
+import Agenda from "../sections/Agenda.astro";
+import Hero from "../sections/Hero.astro";
+import data from "../assets/data.json";
+import Talento from "../sections/Talento.astro";
+import Campus from "../sections/Campus.astro";
+import Form from "../components/Form.astro";
+import Modal from "../components/Modal.astro";
+import Hub from "../sections/Hub.astro";
+import Dots from "../sections/Dots.astro";
+import Audiencia from "../sections/Audiencia.astro";
+import Pilares from "../sections/Pilares.astro";
+import CTF from "../sections/CTF.astro";
+import CTFForm from "../components/CTFForm.astro";
+---
+
+<Layout
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  canonical="https://madridfortech.com/"
+  robots="index, follow"
+  img="https://madridfortech.com/share.webp"
+>
+  <Hero />
+  <!-- <Sticky /> -->
+  <Dots />
+  <Talento />
+  <Pilares />
+  <CTF />
+  <Speakers />
+  <Agenda />
+  <Hub />
+  <Campus />
+  <Audiencia />
+  <Footer />
+  <Modal id="FormModal" title="¡Apúntate al evento!">
+    <Form />
+  </Modal>
+  <Modal id="CTFFormModal" title="¡Apúntate al CTF!">
+    <CTFForm />
+  </Modal>
+</Layout>
