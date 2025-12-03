@@ -30,6 +30,20 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
     />
     <meta name="theme-color" content="#020617" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TY7XPLW6EK"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TY7XPLW6EK");
+    </script>
     <!-- Google Tag Manager -->
     <script is:inline>
       (function (w, d, s, l, i) {
